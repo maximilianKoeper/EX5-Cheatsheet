@@ -1,1 +1,2 @@
-# -EX5-Cheatsheet
+# EX5-Cheatsheet
+Molekül- und Festkörperphysik Cheat-Sheet
