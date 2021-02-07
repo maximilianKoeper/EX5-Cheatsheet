@@ -1,4 +1,58 @@
 \section{Strukturbestimmung}
 
 % ###############################
-\subsection*{}
+\subsection*{Reziprokes-Gitter}
+\begin{equation*}
+    \begin{aligned}
+        a_i \cdot b_i &= 2 \pi \delta_{ij} = \begin{cases}
+            2 \pi & \, \text{für } i = j \\
+            0 & \, \text{sonst}
+            \end{cases}
+    \end{aligned}
+\end{equation*}
+\begin{equation*}
+    \begin{aligned}
+        b_1 &= \frac{2 \pi}{V_Z} (a_2 \times a_3) \\
+        b_2 &= \frac{2 \pi}{V_Z} (a_3 \times a_1) \\
+        b_3 &= \frac{2 \pi}{V_Z} (a_1 \times a_2) \\
+    \end{aligned}
+\end{equation*}
+
+% ###############################
+\subsection*{Bragg-Bedingung}
+
+\begin{equation*}
+    \begin{aligned}
+        \lambda &= 2d_{hkl} \sin(\Theta) \; ; \; \lambda n = 2d \sin(\Theta)
+    \end{aligned}
+\end{equation*}
+
+% ###############################
+\subsection*{Strukturfaktor}
+
+\begin{equation*}
+    \begin{aligned}
+        r_{\alpha} &= u_\alpha a_1 + v_\alpha a_2 + \omega_\alpha a_3 \\ 
+        S_{hkl} &= \sum_\alpha f_\alpha (G) e^{-2\pi i (hu_\alpha + kv_\alpha + l\omega_\alpha)}
+    \end{aligned}
+\end{equation*}
+ 
+\begin{equation*}
+    \begin{aligned}
+        &\text{kubisch primitv, zweiatomige Basis CsCl} \\
+        S_{hkl} &= \begin{cases}
+            f_{Cs} + f_{Cl} \pi & \, h+k+l \text{ gerade} \\
+            f_{Cs} - f_{Cl} & \, h+k+l \text{ ungerade}
+            \end{cases} \\
+        &\text{kubisch raumzentriert, einfache Basis} \\
+        S_{hkl} &= \begin{cases}
+            2f \pi & \, h+k+l \text{ gerade} \\
+            0 & \, h+k+l \text{ ungerade}
+            \end{cases} \\
+        &\text{kubisch flächenzentriert, einfache Basis} \\
+        S_{hkl} &= \begin{cases}
+            4f \pi & \, \text{ alle gerade / ungerade} \\
+            0 & \, sosnt.
+            \end{cases}
+    \end{aligned}
+\end{equation*}
