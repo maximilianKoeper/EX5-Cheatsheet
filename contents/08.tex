@@ -12,3 +12,45 @@
         \left(\frac{1}{m^*}\right)_{ij} &= \frac{1}{\hbar} \frac{\partial^2 E(k)}{\partial k_i \partial k_j}
     \end{aligned}
 \end{equation*}
+
+% ###############################
+
+\subsubsection*{Ladungstransport}
+\begin{equation*}
+    \begin{aligned}
+        j &= - \frac{e}{V} \sum_k \nu(k) = - \frac{e}{V} \int \rho_k \nu (k) f(E,T) d^3k \\
+            &= \frac{-e}{4 \pi^3} \int \nu (k) f(E,T) d^3k \\
+        T &\rightarrow 0: \\
+        j &= \frac{-e}{4 \pi^3 \hbar} \int_{besetzt} \nabla_k E(k) d^3k
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{Ladungstransport – Löcher}
+
+\begin{equation*}
+    \begin{aligned}
+        j &= \frac{-e}{4 \pi^3} \int_{besetzt} \nu(k) d^3k \\
+          &= \frac{-e}{4 \pi^3} \left[\int_{BZ} \nu(k) d^3 k - \int_{leer} \nu(k) d^3k\right] \\
+          &= \frac{+e}{4 \pi^3} \int_{leer} \nu(k) d^3k
+    \end{aligned}
+\end{equation*}
+
+Driftgeschwindigkeit:
+\begin{equation*}
+    \nu_d = (v-v_{th}) = -\frac{e \tau}{m} \mathcal{E} = -\mu \mathcal{E}
+\end{equation*}
+
+Beweglichkeit / Mobilität:
+\begin{equation*}
+    \sigma = n e \mu = \frac{n e^2 \tau}{m}
+\end{equation*}
+
+\subsubsection*{Sommerfeld-Theorie}
+
+\begin{equation*}
+    \begin{aligned}
+        \sigma &= n e \mu = \frac{n e^2 \tau(E_F)}{m}
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{TODO!!!}
