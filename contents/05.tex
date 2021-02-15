@@ -1,1 +1,49 @@
 \section{Gitterdynamik}
+
+% ###############################
+
+\subsubsection*{Lineare Kette}
+
+\begin{equation*}
+    \begin{aligned}
+        F_s &= \sum_n c_n \left(u_{s+n} - u_s\right) \\
+        M \frac{d^2 u_s}{dt^2} &= \sum_n c_n \left(u_{s+n} - u_s\right) \\
+        u_{s+n} &= U \exp \left(-i\left(\omega t - q (s+n)a\right)\right)
+    \end{aligned}
+\end{equation*}
+
+Nächste Nachbar Wechselwirkung:
+\begin{equation*}
+    \begin{aligned}
+        M \frac{d^2 u_s}{dt^2} &= \sum_n c \left(u_{s+1} -2u_s + u_{s-1}\right) \\
+        U_{s \pm 1} &= U \exp \left(-i \left(\omega t - q (s \pm 1)a\right)\right) \\
+        \omega &= 2 \sqrt{\frac{c}{M}} \abs{\sin \left(\frac{qa}{2}\right)}
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{$\Gamma$-Punkt}
+\begin{equation*}
+    \begin{aligned}
+        \lambda &\gg a: qa \rightarrow 0 \; \sin(x) \approx x: \\
+        \omega &= \sqrt{\frac{a^2c}{M}}q = v q \\
+        v_p &= \frac{\omega}{q} \approx \frac{\partial \omega}{\partial q} = v_g
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{Zweiatomige Basis}
+
+\begin{equation*}
+    \begin{aligned}
+        \omega_{a,o}^2 &= \frac{C}{\mu} \mp C \sqrt{\frac{1}{\mu^2}- \frac{4}{M_1M_2} \sin^2\left(\frac{qa}{2}\right)} \\
+        \frac{1}{\mu} &= \frac{1}{M_1} + \frac{1}{M_2}
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{p-atomige Basis}
+
+\begin{itemize}
+    \itemsep 0pt
+    \item 3 akustische Zweige (1xL, 2xT)
+    \item 3(p-1) optische Zweige
+\end{itemize}
+
