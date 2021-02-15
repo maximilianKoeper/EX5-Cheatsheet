@@ -34,6 +34,61 @@ Lineare Dispersion $\omega = \nu q$
 
 \begin{equation*}
     \begin{aligned}
-        D(\omega)d \omega &= \frac{V}{2 \pi^2} \frac{\omega^3}{\nu^3} d\omega 
+        D(\omega)d \omega &= \frac{V}{2 \pi^2} \frac{\omega^2}{\nu^3} d\omega  \\
+        N &= \int_0^{\omega_{max}} \frac{V}{2 \pi^2} \frac{\omega^2}{\nu^3} d\omega \\
+        \omega_{max} &= \omega_D = \nu^3 \sqrt{\frac{6 \pi^2 N}{V}} = \frac{\nu}{a} \left(6 \pi^2\right)^{1/3} \\
+        D(\omega) &= \frac{V}{2 \pi^2} \omega^2 \left(\frac{1}{\nu_l^3} + \frac{2}{\nu_t^3}\right) = \frac{3 V}{2 \pi^2} \frac{\omega^2}{\nu_D^3}
+    \end{aligned}
+\end{equation*}
+
+\pagebreak
+Für nicht-lineare Dispersion:
+\begin{equation*}
+    \begin{aligned}
+        D(\omega)d \omega &= \frac{V}{2 \pi^2} q^2 \frac{dq}{d\omega} d\omega = \frac{V}{2 \pi^2} \frac{q^2}{v_g} d\omega
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{Wärmekapazität – Debye Näherung}
+\begin{equation*}
+    \begin{aligned}
+        U &= \int_0^{\omega_D} \hbar \omega D(\omega) \langle n(\omega, T) \rangle d\omega \\
+        \langle n(\omega,T) \rangle &= \frac{1}{\exp(\hbar \omega / k_B T) -1} \\
+        U(T) &= \frac{9N}{\omega_D^3} \int_0^{\omega_D} \frac{1}{\exp(\hbar \omega / k_B T) -1} d\omega \\
+        \Theta &= \frac{\hbar \omega_D}{k_B} \qquad \text{Debye-Temp.} \\
+        C_V &= \left(\frac{\partial U}{\partial T}\right)_V = 9Nk_B \left(\frac{T}{\Theta}\right)^3 \int_0^{x_D} \frac{x^4 e^x}{(e^x -1)^2} dx \\
+        x &= \frac{\hbar \omega}{k_B T}; \quad x_D = \frac{\hbar \omega_D}{k_B T} = \frac{\Theta}{T}
+    \end{aligned}
+\end{equation*}
+
+Für hohe Temperaturen: 
+\begin{equation*}
+    C_V = 3N k_B
+\end{equation*}
+
+Für tiefe Temperaturen:
+\begin{equation*}
+    C_V = \frac{12 \pi^4}{5} N k_B \left(\frac{T}{\Theta}\right)^3
+\end{equation*}
+
+Zahl der angeregten Phononen – Debye Näherung:
+\begin{equation*}
+    \begin{aligned}
+        N_{ph} &= \int_0^{\omega_D} D(\omega) \langle n (\omega,T) \rangle d\omega \\ 
+        &= \frac{3V}{2 \pi^2 \nu_D^3} \left(\frac{k_B T}{\hbar}\right)^3 \int_0^{x_D} \frac{x^2}{e^x -1}dx \\
+        N_{ph} &\propto \begin{cases}
+            T^3 & \, \text{für} T \ll \Theta \\
+            T &  \, \text{für} T \gg \Theta
+            \end{cases} \\
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{Wärmekapazität – Einstein Näherung}
+\begin{equation*}
+    \begin{aligned}
+        \langle n(\omega,T) \rangle &= \frac{1}{\exp(\hbar \omega / k_B T) -1} + \frac{1}{2}\\
+        D(\omega) &= 3N \delta(\omega-\omega_E) \\
+        C_V &= 3N k_B \left(\frac{\Theta_E}{T}\right)^2 \frac{\exp\left(\frac{\Theta_E}{T}\right)}{\left[\exp \left(\frac{\Theta_E}{T}\right)-1\right]^2} \\
+        \Theta_E &= \frac{\hbar \omega_E}{k_B}
     \end{aligned}
 \end{equation*}
