@@ -9,3 +9,23 @@
         p &= \int_{-\infty}^{E_V} D_V(E) (1-f(E,T)) dE
     \end{aligned}
 \end{equation*}
+
+\subsubsection*{intrinsische Ladungsträgerdichte}
+\begin{equation*}
+    \begin{aligned}
+        D_L(E) &= \frac{1}{2 \pi^2} \left(\frac{2 m_n^*}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E-E_L} \\
+        D_V(E) &= \frac{1}{2 \pi^2} \left(\frac{2 m_p^*}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E_V-E} \\
+        & \Rightarrow \\
+        n &= N_L \exp\left(-\frac{E_L-E_F}{k_B T}\right) \\
+        p &= N_V \exp\left(\frac{E_V - E_F}{k_B T}\right)
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{Lage des Fermi-Niveaus}
+\begin{equation*}
+    \begin{aligned}
+        n_i &= p_i = \sqrt{N_L N_V} \exp \left(- \frac{E_g}{2 k_B T}\right) \\
+        E_F &= \frac{E_L + E_V}{2} + \frac{k_B T}{2} \ln \left(\frac{N_V}{N_L}\right) \\
+            &= \frac{E_L + E_V}{2} + \frac{3 k_B T}{4} \ln \left(\frac{m_p^*}{m_n^*}\right)
+    \end{aligned}
+\end{equation*}
