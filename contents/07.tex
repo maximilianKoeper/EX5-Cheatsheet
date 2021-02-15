@@ -1,1 +1,58 @@
 \section{Elektronen im Festkörper}
+
+% ###############################
+Elektronen sind Fermionen: Fermi-Dirac Statistik:
+\begin{equation*}
+    \langle f(E,T) \rangle = \frac{1}{\exp \left(\frac{E-\mu}{k_B T}\right)+1}
+\end{equation*}
+Dispersion:
+\begin{equation*}
+    E = \frac{\hbar^2 k^2}{2m}
+\end{equation*}
+
+% ###############################
+
+\subsubsection*{Freies Elektronengas – Zustandsdichte}
+
+\begin{equation*}
+    \begin{aligned}
+        D(E) &= \frac{1}{2 \pi^2} \left(\frac{2m}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E} \\
+        \rho_k &= \frac{2V}{(2 \pi)^3}
+    \end{aligned}
+\end{equation*}
+
+% ###############################
+
+\subsubsection*{Chemisches Potenzial und Fermi Energie}
+\begin{equation*}
+    \begin{aligned}
+        \mu &= \left(\frac{\partial F}{\partial N}\right)_{T,V} \\
+        E_F &= \mu (T=0)
+    \end{aligned}
+\end{equation*}
+
+Mit $n=\frac{N}{V} = \int_0^\infty D(E)f(E,T=0)dE =\int_0^{E_F} D(E)dE$ lässt sich leicht zeigen:
+
+\begin{equation*}
+    \begin{aligned}
+        E_F &= \frac{\hbar^2}{2m} \left(3 \pi^2 n\right)^{\frac{2}{3}} \\
+        k_F &= \left(3 \pi^2 n\right)^{\frac{1}{3}} \\
+        \nu_F &= \frac{\hbar}{m} \left(3 \pi^2 n\right)^{\frac{1}{3}} \\
+        T_F &= \frac{E_F}{k_B}
+    \end{aligned}
+\end{equation*}
+
+Spezifische Wärme (Sommerfeld):
+\begin{equation*}
+    c_V^{el} \approx \frac{\pi^2 T}{3 T_F} \frac{2 nk_B}{2} = \gamma T
+\end{equation*}
+
+\subsubsection*{Elektronen im periodischen Potenzial}
+
+\begin{equation*}
+    \begin{aligned}
+        V(r) &= \sum_G V_G e^{iG\cdot r} \\
+        \psi_k(r) &= \left(\sum_G c_{k-G} e^{-iG \cdot r}\right) e^{ik \cdot r} = u_k(r) e^{ik \cdot r} \\
+        \psi_k(r+R) &= \psi_k(r) e^{i k \cdot R}, \quad \psi_{k+G}(r) = \psi_k(r)
+    \end{aligned}
+\end{equation*}
