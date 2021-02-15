@@ -1,2 +1,39 @@
-\section{Anharmonische Gittereigenschaften}
+\section{Thermische Eigenschaften}
 
+\subsubsection*{Wärmekapazität}
+
+\begin{equation*}
+    \begin{aligned}
+        C_V &= \left(\frac{\partial U}{\partial T}\right)_V \\
+        U &= 6N \frac{1}{2} k_B T = 3 N k_B T \\
+        C_V &= 3Nk_B = 3R \; \text{ Dulong-Petit}
+    \end{aligned}
+\end{equation*}
+
+\begin{equation*}
+    U = \int_0^\infty E D(E) \langle n(E,T) \rangle dE
+\end{equation*}
+
+Zustandsdichte im q-Raum:
+\begin{equation*}
+    \begin{aligned}
+        V_q &= \left(\frac{2 \pi}{L}\right)^3 \rightarrow \rho_q = \frac{1}{V_q} = \frac{V}{(2\pi)^3} \\
+    \end{aligned}
+\end{equation*}
+Zahl der Zustände:
+\begin{equation*}
+    \begin{aligned}
+        D(q) dq &= \rho_q 4 \pi q^2 dq = \frac{V}{2 \pi} q^2 dq \\
+        q & \rightarrow \omega \text{(für isotrope Kristalle)} \\
+        D(\omega) d\omega &= D(q) \frac{dq}{d\omega} d\omega = \frac{V}{2 \pi^2} q^2 \frac{dq}{d \omega} d\omega
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{--> Debye-Näherung}
+Lineare Dispersion $\omega = \nu q$
+
+\begin{equation*}
+    \begin{aligned}
+        D(\omega)d \omega &= \frac{V}{2 \pi^2} \frac{\omega^3}{\nu^3} d\omega 
+    \end{aligned}
+\end{equation*}
