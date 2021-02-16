@@ -44,7 +44,8 @@ Lineare Dispersion $\omega = \nu q$
 Für nicht-lineare Dispersion:
 \begin{equation*}
     \begin{aligned}
-        D(\omega)d \omega &= \frac{V}{2 \pi^2} q^2 \frac{dq}{d\omega} d\omega = \frac{V}{2 \pi^2} \frac{q^2}{v_g} d\omega
+        D(\omega)d \omega &= \frac{V}{2 \pi^2} q^2 \frac{dq}{d\omega} d\omega = \frac{V}{2 \pi^2} \frac{q^2}{v_g} d\omega \\
+        &= Z_3(q) d^3q
     \end{aligned}
 \end{equation*}
 
@@ -55,7 +56,7 @@ Für nicht-lineare Dispersion:
         \langle n(\omega,T) \rangle &= \frac{1}{\exp(\hbar \omega / k_B T) -1} \\
         U(T) &= \frac{9N}{\omega_D^3} \int_0^{\omega_D} \frac{1}{\exp(\hbar \omega / k_B T) -1} d\omega \\
         \Theta &= \frac{\hbar \omega_D}{k_B} \qquad \text{Debye-Temp.} \\
-        C_V &= \left(\frac{\partial U}{\partial T}\right)_V = 9Nk_B \left(\frac{T}{\Theta}\right)^3 \int_0^{x_D} \frac{x^4 e^x}{(e^x -1)^2} dx \\
+        C_V &= 9Nk_B \left(\frac{T}{\Theta}\right)^3 \int_0^{x_D} \frac{x^4 e^x}{(e^x -1)^2} dx \\
         x &= \frac{\hbar \omega}{k_B T}; \quad x_D = \frac{\hbar \omega_D}{k_B T} = \frac{\Theta}{T}
     \end{aligned}
 \end{equation*}
@@ -79,6 +80,15 @@ Zahl der angeregten Phononen – Debye Näherung:
             T^3 & \, \text{für} T \ll \Theta \\
             T &  \, \text{für} T \gg \Theta
             \end{cases} \\
+    \end{aligned}
+\end{equation*}
+
+Allgemein gilt für Funktionen:
+\begin{equation*}
+    \begin{aligned}
+        \langle g(\omega) \rangle_D &= \sum_{q,i} g(\omega_{qi}) \\
+           &= \sum_i \int_{q_D} d^3 q Z_3(q) g(\omega_{qi}) \\
+           &= \sum_i \int_0^{\omega_D} d\omega D(\omega) g(\omega)
     \end{aligned}
 \end{equation*}
 
@@ -119,4 +129,15 @@ kinetische Gastheorie (Phononen = ideales Gas):
 Mehrere unabhängigen Streumechanismen:
 \begin{equation*}
     \frac{1}{l} = \frac{1}{l_A} + \frac{1}{l_B} + \dots
+\end{equation*}
+
+Temperaturabhängigkeit:
+\begin{equation*}
+    \begin{aligned}
+        \lambda &\propto \begin{cases}
+            \frac{1}{T} & \, \text{für} T \gg \Theta_D \, \text{Ph-Ph} \\
+            T^ne^{\frac{\Theta_D}{T}} &  \, \text{für} T \ll \Theta_D \, \text{Ph-Ph (n=0-3)} \\
+            T^3 & \, \text{für} T \lll \Theta_D \, \text{Ph-Defekt}
+            \end{cases} \\
+    \end{aligned}
 \end{equation*}
