@@ -6,27 +6,28 @@
 
 \begin{equation*}
     \begin{aligned}
-        F_s &= \sum_n c_n \left(u_{s+n} - u_s\right) \\
-        M \frac{d^2 u_s}{dt^2} &= \sum_n c_n \left(u_{s+n} - u_s\right) \\
+        F_s &= \sum_n C_n \left(u_{s+n} - u_s\right) \\
+        M \frac{d^2 u_s}{dt^2} &= \sum_n C_n \left(u_{s+n} - u_s\right) \\
         u_{s+n} &= U \exp \left(-i\left(\omega t - q (s+n)a\right)\right)
     \end{aligned}
 \end{equation*}
 
-Nächste Nachbar Wechselwirkung:
+\subsubsection*{Nächste Nachbar Wechselwirkung:}
 \begin{equation*}
     \begin{aligned}
-        M \frac{d^2 u_s}{dt^2} &= \sum_n c \left(u_{s+1} -2u_s + u_{s-1}\right) \\
+        M \frac{d^2 u_s}{dt^2} &= \sum_{n>0} C \left(u_{s+1} -2u_s + u_{s-1}\right) \\
         U_{s \pm 1} &= U \exp \left(-i \left(\omega t - q (s \pm 1)a\right)\right) \\
-        \omega &= 2 \sqrt{\frac{c}{M}} \abs{\sin \left(\frac{qa}{2}\right)}
+        \omega &= 2 \sqrt{\frac{C}{M}} \abs{\sin \left(\frac{qa}{2}\right)}
     \end{aligned}
 \end{equation*}
 
-\subsubsection*{$\Gamma$-Punkt}
+\subsubsection*{$\Gamma$-Punkt (Schall)}
 \begin{equation*}
     \begin{aligned}
         \lambda &\gg a: qa \rightarrow 0 \; \sin(x) \approx x: \\
-        \omega &= \sqrt{\frac{a^2c}{M}}q = v q \\
-        v_p &= \frac{\omega}{q} \approx \frac{\partial \omega}{\partial q} = v_g
+        \omega &= \sqrt{\frac{a^2C}{M}}q = v q \\
+        v_p &= \frac{\omega}{q} \approx \frac{\partial \omega}{\partial q} = v_g \\
+        v_{Schall} &= \left.\frac{\partial \omega}{\partial q} \right|_{q \rightarrow 0}
     \end{aligned}
 \end{equation*}
 
@@ -35,7 +36,8 @@ Nächste Nachbar Wechselwirkung:
 \begin{equation*}
     \begin{aligned}
         \omega_{a,o}^2 &= \frac{C}{\mu} \mp C \sqrt{\frac{1}{\mu^2}- \frac{4}{M_1M_2} \sin^2\left(\frac{qa}{2}\right)} \\
-        \frac{1}{\mu} &= \frac{1}{M_1} + \frac{1}{M_2}
+        \omega_{a,o}^2 &= \frac{C'}{M} \mp \frac{1}{M} \sqrt{(C')^2- 4C_1 C_2 \sin^2\left(\frac{qa}{2}\right)} \\
+        \frac{1}{\mu} &= \frac{1}{M_1} + \frac{1}{M_2}; \quad C' = C_1 + C_2
     \end{aligned}
 \end{equation*}
 
@@ -47,3 +49,9 @@ Nächste Nachbar Wechselwirkung:
     \item 3(p-1) optische Zweige
 \end{itemize}
 
+\subsubsection*{Übernächste NN:}
+\begin{equation*}
+    \begin{aligned}
+        \omega^2(q) &= \frac{4C}{M} \sin^2\left(\frac{qa}{2}\right) \left[1+\frac{4}{\nu}\cos^2\left(\frac{qa}{2}\right)\right]
+    \end{aligned}
+\end{equation*}
