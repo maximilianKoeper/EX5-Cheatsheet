@@ -1,4 +1,25 @@
+\pagebreak
 \section{Supraleitung}
+
+\begin{equation*}
+    \begin{aligned}
+        B_c(T) &= B_c(0) \left[1- \left(\frac{T}{T_c}\right)^2\right]
+    \end{aligned}
+\end{equation*}
+Supraleitung wird zerstört, wenn die magnetische Feldenergie der thermischen 
+Energie am Phasenübergang entspricht:
+\begin{equation*}
+    \begin{aligned}
+        \frac{B_{cth}^2(T)}{2 \mu_0} &= g_n(T) - g_s(T)
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{Fluss-Schlauch:}
+\begin{equation*}
+    \begin{aligned}
+        \Phi_0 &= \frac{h}{2e} \approx 2.067 \times 10^{-15} \text{Vs}
+    \end{aligned}
+\end{equation*}
 
 \subsubsection*{1. London-Gleichung}
 \begin{equation*}
@@ -6,6 +27,8 @@
         \frac{dj_s}{dt} &= \frac{n_s e_s^2}{m_s} \mathcal{E}
     \end{aligned}
 \end{equation*}
+$s$: Teilchen die den Suprastrom tragen:\\
+BCS: $m_s = 2m$; $e_s = -2e$; $n_s = n/2$
 
 \subsubsection*{2. London-Gleichung}
 \begin{equation*}
@@ -21,9 +44,39 @@
     \end{aligned}
 \end{equation*}
 
+\subsubsection*{Temperaturabhängigkeit (Gorter-Casimir-Modell)}
+\begin{equation*}
+    \begin{aligned}
+        \lambda_L (T) &= \frac{\lambda_L^0}{\sqrt{1- (T/T_c)^4}}
+    \end{aligned}
+\end{equation*}
+
+\subsubsection*{Thermodynamische Eigenschaften}
+\begin{equation*}
+    \begin{aligned}
+        G_s(B,T) &= G_s(0,T) + \frac{V B^2}{2 \mu_0} \\
+        \Delta S &= S_n - S_s = - \frac{V B_c}{\mu_0} \frac{d B_c}{dT} \\
+        \Delta C &= C_s - C_n \\
+            &= \frac{VT}{\mu_0} \left[B_c \frac{d^2 B_c}{dT^2} + \left(\frac{dB_c}{dT}\right)^2\right]
+    \end{aligned}
+\end{equation*}
+
 \subsubsection*{Kritischer Strom}
 \begin{equation*}
     \begin{aligned}
         I_c &= \frac{2 \pi R}{\mu_0} B_c
+    \end{aligned}
+\end{equation*}
+Kritische Geschwindigkeit: kinetische Energie = Kondensationsenergie
+\begin{equation*}
+    \begin{aligned}
+        \frac{1}{2} n_s m_s \nu_c^2 &= \frac{1}{4} D(E_F) \Delta^2 \\
+    \end{aligned}
+\end{equation*}
+\begin{equation*}
+    \begin{aligned}
+        j_s &= -n_s e_s \nu \\
+        j_c &= \sqrt{\frac{3}{2}} \frac{e_s n_s \Delta}{\hbar k_F} \\
+        B_c &= \mu_0 \lambda_L j_c
     \end{aligned}
 \end{equation*}
