@@ -15,7 +15,7 @@
     \begin{aligned}
         D_L(E) &= \frac{1}{2 \pi^2} \left(\frac{2 m_n^*}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E-E_L} \\
         D_V(E) &= \frac{1}{2 \pi^2} \left(\frac{2 m_p^*}{\hbar^2}\right)^{\frac{3}{2}} \sqrt{E_V-E} \\
-        & \Rightarrow \\
+        & \Rightarrow \text{Freie Ladungen:}\\
         n &= N_L \exp\left(-\frac{E_L-E_F}{k_B T}\right) \\
         p &= N_V \exp\left(\frac{E_V - E_F}{k_B T}\right)
     \end{aligned}
@@ -29,3 +29,40 @@
             &= \frac{E_L + E_V}{2} + \frac{3 k_B T}{4} \ln \left(\frac{m_p^*}{m_n^*}\right)
     \end{aligned}
 \end{equation*}
+
+\subsubsection*{Ladungsträgerdichte \& Fermi-Niveau}
+Wahrscheinlichket, dass eine Störstelle nicht ionisiert ist:
+\begin{equation*}
+    \begin{aligned}
+        \frac{n_D^0}{n_D} &= 2\frac{1}{e^{(E_D - E_F)/k_B T} +1} \\
+        \frac{n_A^0}{n_A} &= 4\frac{1}{e^{(E_F - E_A)/k_B T} +1} \\
+    \end{aligned}
+\end{equation*}
+für $n_D \gg n_A$: 
+\begin{equation*}
+    \begin{aligned}
+        \frac{n(n_A + n)}{n_D - n_A - n} &= N_L \exp \left(- \frac{E_d}{k_B T}\right) \\
+        E_d & = E_L - E_D
+    \end{aligned}
+\end{equation*}
+
+\textbf{- Sehr tiefe Temperaturen:}\\
+    Kompensationsbereich: \\
+    $n \approxeq \frac{n_D n }{n_A} e^{-E_d / k_B T}$ \\
+    $ E_F \approxeq E_L - E_d + k_B T \ln \left(\frac{n_D}{n_A}\right) $ \\
+    $E_F$ wird durch Donatoren bestimmt. \\
+\textbf{- Tiefe Temperaturen:} \\
+    Störstellenreserve: \\
+    $n \approx \sqrt{N_L n_D} \exp\left(- \frac{E_d}{2 k_B T}\right)$ \\
+    $E_F \approx E_L - \frac{E_d}{2} + \frac{k_B T}{2} \ln \left(\frac{N_L}{n_D}\right)$ \\
+    $E_F$ liegt etwa in der Mitte der Bänder.\\
+\textbf{- Mittlere Temperaturen:} \\
+    Störstellenerschöpfung: \\
+    $n \approx n_D$ \\
+    $E_F \approx E_L - k_B T \ln \left(\frac{N_L}{n_D}\right)$ \\
+    Die Temperatur ist hoch genug, um alle Störstellen zu ionisieren, aber noch zu klein, um eine große Zahl von Ladungsträgern aus dem
+    Valenz- ins Leitungsband anzuregen.\\
+\textbf{- Hohe Temperaturen:} \\
+    Eigenleitung: \\
+    $n^2 = N_L^2 \exp \left(- \frac{E_g}{k_B T}\right)$ \\
+    $E_F = \frac{E_L + E_V}{2}$ \\
