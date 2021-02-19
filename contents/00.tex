@@ -4,8 +4,8 @@
 
 \begin{equation*}
     \begin{aligned}
-        E &= h \nu \qquad \nu = \frac{c}{\lambda} \\
-        E &= h \cdot \frac{1}{\lambda} \\
+        E &= h \nu; \qquad \nu = \frac{c}{\lambda} \\
+        E &= hc \cdot \frac{1}{\lambda} \\
         M &= \frac{M_1 M_2}{M_1 + M_2}
     \end{aligned}
 \end{equation*}
@@ -18,8 +18,9 @@
         E_{rot} &= \frac{1}{2} I \omega^2 = \frac{J^2}{2 I} \\
         I &= M_1R_1^2 + M_2R_2^2 = \left(\frac{M_1M_2}{M_1 + M_2}\right) R^2 \\
         J^2 &= J(J+1) \hbar^2 ; \qquad \abs{J} = I\omega \\
-        E_{rot} &= \frac{J(J+1)\hbar^2}{2I} \\
+        E_{rot} &= \frac{J(J+1)\hbar^2}{2I} = \frac{J(J+1)\hbar^2}{2MR^2}\\
         \nu_{J \rightarrow J+1} &= \frac{\hbar}{2 \pi I} \left(J+1\right) \\
+        &= \frac{1}{h} (E_{rot}(J+1) - E_{rot}(J)) \\
         \frac{N_J}{N_0} &= \left(2J+1\right) \exp \left(\frac{-E_J}{k_BT}\right)
     \end{aligned}
 \end{equation*}
@@ -29,8 +30,7 @@
 \begin{equation*}
     \begin{aligned}
         E_\nu &= \left(\nu + \frac{1}{2}\right) \hbar \omega \\
-        \omega &= \sqrt{\frac{\omega}{M}} \\
-        \Delta \nu &= \pm 1
+        \omega &= \sqrt{\frac{\omega}{M}}; \quad \Delta \nu &= \pm 1 \\
     \end{aligned}
 \end{equation*}
 
@@ -46,12 +46,13 @@
 \begin{itemize}
     \itemsep 0pt
     \item betrachte: $\nu = 0 \rightarrow \nu = 1$
-    \item $\Delta J = -1$ P-Zweig
+    \item $\Delta J = -1$ P-Zweig $\omega_P = \omega - J \frac{\hbar}{I}$
     \item $\Delta J = 0$ Q-Zweig (meist verboten)
-    \item $\Delta J = +1$ R-Zweig
+    \item $\Delta J = +1$ R-Zweig $\omega_R = \omega + (J+1)\frac{\hbar}{I}$
 \end{itemize}
 
 \subsubsection*{Auswahlregel (2-atomige Moleküle)}
+
 \begin{equation*}
     \begin{aligned}
         M_{ij} &= \int \psi_i^* p \psi_j d\tau_{el} d\tau_N \\
@@ -64,9 +65,13 @@
 
 \begin{equation*}
     \begin{aligned}
-        &(|i\rangle = |j\rangle) \rightarrow (\varphi_i = \varphi_j) \\
+        \Downarrow \quad &(|i\rangle = |j\rangle) \rightarrow (\varphi_i = \varphi_j) \\
+        &\text{e-Orbitale ändern sich nicht} \\
         \rightarrow M_{ij} &= \int \chi_i^* p_N \chi_j d\tau_N \\
-        &(|i\rangle \neq |j\rangle) \\
+        \Downarrow \quad &(|i\rangle \neq |j\rangle) \\
+        &\text{e wechselt Orbital} \\
         \rightarrow M_{ij} &= \int \chi_i^* \left[\int \varphi_i^* p_{el} \varphi_j d\tau_{el}\right] \chi_j d\tau_{N}
     \end{aligned}
 \end{equation*}
+$R_{min}$ verschiebt sich um $\Delta R$ \\
+Kerne fangen an zu schwingen.

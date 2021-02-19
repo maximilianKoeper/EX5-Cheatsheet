@@ -6,8 +6,7 @@
 
 \begin{equation*}
     \begin{aligned}
-        F_s &= \sum_n C_n \left(u_{s+n} - u_s\right) \\
-        M \frac{d^2 u_s}{dt^2} &= \sum_n C_n \left(u_{s+n} - u_s\right) \\
+        F_s &= \sum_n C_n \left(u_{s+n} - u_s\right) = M \frac{d^2 u_s}{dt^2} \\
         u_{s+n} &= U \exp \left(-i\left(\omega t - q (s+n)a\right)\right)
     \end{aligned}
 \end{equation*}
@@ -16,7 +15,7 @@
 \begin{equation*}
     \begin{aligned}
         M \frac{d^2 u_s}{dt^2} &= \sum_{n>0} C \left(u_{s+1} -2u_s + u_{s-1}\right) \\
-        U_{s \pm 1} &= U \exp \left(-i \left(\omega t - q (s \pm 1)a\right)\right) \\
+        u_{s \pm 1} &= U \exp \left(-i \left(\omega t - q (s \pm 1)a\right)\right) \\
         \omega &= 2 \sqrt{\frac{C}{M}} \abs{\sin \left(\frac{qa}{2}\right)}
     \end{aligned}
 \end{equation*}
@@ -31,7 +30,16 @@
     \end{aligned}
 \end{equation*}
 
-\subsubsection*{Zweiatomige Basis}
+\subsubsection*{Grenzfläche der 1. BZ. $q = \pm \frac{\pi}{a}$}
+\begin{equation*}
+    \nu_gr = \frac{\partial \omega}{\partial q} = 0
+\end{equation*}
+Benachbarte Gitterebenen schwingen gegenphasig:
+\begin{equation*}
+    \frac{u_{s+1}}{u_s} = \exp \left(\pm i \pi\right) = -1
+\end{equation*}
+
+\subsection*{Zweiatomige Basis}
 
 \begin{equation*}
     \begin{aligned}
